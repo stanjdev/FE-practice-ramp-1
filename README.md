@@ -1,9 +1,9 @@
 # FE Practice 7/27/24
 
 ## To-do:
-[] left and right buttons should move card in carousel one offsetWidth each
+[x] left and right buttons should move card in carousel one offsetWidth at a time
 
-[] clicking and dragging card in carousel should move it
+[x] clicking and dragging card in carousel should move it
 
 [] Fix the tic tac toe game logic. sometimes when last move and win, it says "tie"
 
