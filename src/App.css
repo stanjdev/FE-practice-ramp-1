@@ -1,3 +1,7 @@
+:root {
+  --radius-12: 12px;
+}
+
 .App {
   text-align: center;
 }
@@ -20,8 +24,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(4px + 2vmin);
   color: white;
+  gap: 12px;
 }
 
 .App-link {
@@ -35,4 +40,70 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.square {
+  height: 100px;
+  width: 100px;
+  background-color: blanchedalmond;
+  color: black;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease 0.2s;
+  border-radius: var(--radius-12);
+}
+
+.square:hover {
+  transform: translateY(2px);
+}
+
+.square:active {
+  transform: translateY(4px);
+}
+
+.grid {
+  display: grid;
+  gap: 10px;
+}
+
+.ramp-carousel {
+  width: 100%;
+  overflow: scroll;
+}
+
+.ramp-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: plum;
+  padding: 14px;
+  border-radius: var(--radius-12);
+}
+
+.card-slider-container {
+  background-color: aliceblue;
+  display: flex;
+  border-left: 10px solid linear-gradient(to-right black transparent);
+  box-sizing: content-box;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  /* transition: all ease 0.1s; */
+}
+
+.card {
+  background-color: beige;
+  color: black;
+  display: flex;
+  min-width: 300px;
+  user-select: none;
+  padding: 6px;
+  border: solid green 1px;
+  border-radius: 10px;
 }
